@@ -6,5 +6,9 @@ import org.springframework.stereotype.Repository;
 import com.educandoweb.workshopmongo.domain.User;
 
 @Repository
-public interface UserRepository extends MongoRepository<User, String> {	
+public interface UserRepository extends MongoRepository<User, String> {
+
+	User findOne(String id);
+
+	void deleteAll(String id);	
 }
