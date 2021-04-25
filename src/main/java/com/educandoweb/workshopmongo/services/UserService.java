@@ -37,7 +37,7 @@ public class UserService {
 	
 	public void delete(String id) {
 		findById(id);
-		repo.delete(id);
+		repo.deleteAll(id);
 	}
 	
 	public User update(User obj) {
